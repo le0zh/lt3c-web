@@ -1,0 +1,216 @@
+.body{
+    position: relative;
+    padding-top: 60px;
+    -webkit-transition: all .6s ease 0s;
+    -moz-transition: all 0.6s ease;
+    transition: all .6s ease 0s;
+}
+
+.f-center {
+    text-align: center;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+#menu{
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-left: 10%;
+    -webkit-transition: height 0.3s ease;
+    -moz-transition: height 0.3s ease;
+    transition: height 0.3s ease;
+    background: #1d1e30;
+    z-index: 10;
+}
+
+.menu{
+    moz-box-sizing: border-box; /*firefox*/
+    -webkit-box-sizing: border-box; /*safria*/
+    box-sizing: border-box;
+}
+
+.menu-horizontal {
+    width: 100%;
+    white-space: nowrap;
+}
+
+.menu-horizontal .menu-list {
+    display: inline-block;
+}
+
+.menu-list {
+    list-style: none;
+}
+
+.menu-list, .menu-item {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-horizontal .menu-item, .menu-horizontal .menu-separator {
+    display: inline-block;
+    vertical-align: middle;
+}
+.menu-item {
+    height: 100%;
+}
+
+.menu-link {
+    font-size: 15px;
+    color: #b3b3b3;
+    padding: 0 30px;
+    line-height: 60px;
+    position: relative;
+    z-index: 1;
+    display: block;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+/*菜单项下面的提示 ， 默认的情况下是隐藏的*/
+.menu-item .menu-underline {
+    height: 4px;
+    width: 100%;
+    display: block;
+    background: #ffa700;
+    position: absolute;
+    z-index: 0;
+    bottom: -4px;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/*鼠标hover效果*/
+.menu-item:hover a {
+    color: #fff;
+}
+.menu-item:hover .menu-underline{
+     bottom: 0;
+}
+
+/*激活的情况下，是显示的*/
+.menu-item.menu-active .menu-underline {
+    bottom: 0;
+}
+
+.g-section {
+    min-height: 700px;
+    color: #fff;
+    background-image: url("../img/index-bg.jpg");
+    background-position: center 0;
+    background-repeat: no-repeat;
+}
+
+.r-g {
+    letter-spacing: -0.1em;
+    text-rendering: optimizespeed;
+    font-family: "Microsoft YaHei", Arial, Helvetica, sans-serif;
+    -webkit-flex-flow: row wrap;
+    display: -ms-flexbox;
+    -ms-flex-flow: row wrap;
+    -ms-align-content: flex-start;
+    -webkit-align-content: flex-start;
+    align-content: flex-start;
+}
+
+.content{
+    zoom: 1;
+    display: block;
+    padding-top: 270px;
+    text-align: center;
+}
+
+p.title {
+    font-size: 60px;
+    font-weight: bold;
+    margin: 0;
+}
+
+p.desc {
+    color: #ccc;
+    font-size: 24px;
+}
+
+.download-btn-wrap{
+    width: 300px;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    margin: 15px;
+}
+.download-btn{
+    background: #ecba3f;
+    border-radius: 10px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.download-btn:hover{
+    background: #ffa700;
+    color: #662e0d;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.u-btn-lg {
+    width: 100%;
+    height: 70px;
+    font-size: 23px;
+    line-height: 60px;
+    letter-spacing: 0em;
+}
+
+.u-btn-inner {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 4px;
+    vertical-align: middle;
+    text-align: center;
+    color: #662e0d;
+    background: transparent;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+.col_yellow {
+    color: #EE9A07;
+}
+
+.other-info{
+    border-top: 1px solid #ffa700;
+    width: 100%;
+    background: #161523;
+    min-height: 70px;
+}
+
+.contact{
+    float: right;
+    padding: 20px;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contact a{
+    color: #ffa700;
+}
+
+.g-topics{
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 10px;
+    min-height: 700px;
+}
